@@ -16,7 +16,7 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.example.jasperharrison.locationtest.BuildConfig.APPLICATION_ID // TODO: Change to your package
 class ParentActivity: {
-    private val TAG = "MainActivity"
+    private val TAG = "ParentActivity"
     private val REQUEST_PERMISSIONS_REQUEST_CODE = 34
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var latitudeText: TextView
