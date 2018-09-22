@@ -9,6 +9,7 @@ import android.content.Context
 import android.util.Log
 import java.lang.ref.WeakReference
 
+<<<<<<< HEAD
 /*class MyIntentService: IntentService("MyIntentService") {
     var Lat = 0.0
     var Lon = 0.0
@@ -21,6 +22,8 @@ import java.lang.ref.WeakReference
         this.Lon = lon
         super.onCreate()
     }
+=======
+>>>>>>> 12cc177eb9f4ef01a6a207a5169ddc666c9bea5d
 class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: MainActivity): IntentService("MyIntentService") {
     var Lat = lat
     var Lon = lon
@@ -75,4 +78,4 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
         }
     }
 
-}*/
+}
