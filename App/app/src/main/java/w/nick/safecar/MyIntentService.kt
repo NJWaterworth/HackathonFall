@@ -25,15 +25,15 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
     private lateinit var notificationalert: NotificationAlert
 
     override fun onHandleIntent(intent: Intent?) {
+        cargo.angry = true
         getLastLocation()
         performCheckIn()
         if(cargo.angry) {
-            // TODO: Send notification to phone
             notificationalert = NotificationAlert()
             notificationalert.createNotificationStuff(myActivityRef.applicationContext)
             notificationalert.alert()
         }
-        Thread.sleep(400)
+        Thread.sleep(400) // Sleeps for .4 seconds.
     }
     fun getX(): Double {
         return prevXPos

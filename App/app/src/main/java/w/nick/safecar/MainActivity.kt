@@ -48,6 +48,9 @@ class MainActivity : AppCompatActivity() {
         if(!checkPermissions()) {
             Log.e(TAG, "Checking Permissions")
         }
+        val intent = Intent(this, MyIntentService::class.java)
+        startService(intent)
+
     }
 
     private fun showSnackbar(
