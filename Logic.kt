@@ -1,3 +1,20 @@
+import android.Manifest.permission.ACCESS_FINE_LOCATION
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.content.pm.PackageManager.PERMISSION_GRANTED
+import android.net.Uri
+import android.provider.Settings
+import android.support.design.widget.Snackbar
+import android.support.design.widget.Snackbar.LENGTH_INDEFINITE
+import android.support.v4.app.ActivityCompat
+import android.util.Log
+import android.view.View
+import android.widget.TextView
+
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.example.jasperharrison.locationtest.BuildConfig.APPLICATION_ID // TODO: Change to your package
 class ParentActivity: {
     private val TAG = "MainActivity"
     private val REQUEST_PERMISSIONS_REQUEST_CODE = 34
