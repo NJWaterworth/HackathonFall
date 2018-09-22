@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dcd9602-5664-4a8c-b5d0-ac91b6ef736a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4dcd9602-5664-4a8c-b5d0-ac91b6ef736a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/out/production/classes/" />
     <ignored path="$PROJECT_DIR$/out/test/classes/" />
@@ -45,21 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetClientGet.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NetClientGet.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/NetClientGet.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="132">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DogOrChild.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DogOrChild.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/DogOrChild.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-693">
-              <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="237">
+              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -82,8 +78,8 @@
         <option value="$PROJECT_DIR$/app/app/src/androidTest/java/w/nick/safecar/DogOrChild" />
         <option value="$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/MyIntentService.kt" />
         <option value="$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/NetClientGet.java" />
-        <option value="$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/NetClientGet.kt" />
         <option value="$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/DogOrChild.kt" />
+        <option value="$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/NetClientGet.kt" />
       </list>
     </option>
   </component>
@@ -451,18 +447,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/NetClientGet.kt">
+    <entry file="file://$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/DogOrChild.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="237">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/DogOrChild.kt">
+    <entry file="file://$PROJECT_DIR$/app/app/src/main/java/w/nick/safecar/NetClientGet.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-693">
-          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        <state relative-caret-position="132">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>

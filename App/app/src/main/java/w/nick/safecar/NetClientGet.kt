@@ -20,7 +20,7 @@ object NetClientGet {
         val ural3 = "&units=imperial&type=accurate&mode=xml&APPID=66bf8bca4952f3cb9d0b08273919dc35"
         ural = ural.toDouble() + lat + ural2.toDouble() + lng + ural3.toDouble()
 
-        var temp = ""
+        var temp = "70.0"
         try {
 
             val url = URL(ural)
