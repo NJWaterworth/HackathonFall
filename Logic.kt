@@ -15,7 +15,7 @@ import android.widget.TextView
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.example.jasperharrison.locationtest.BuildConfig.APPLICATION_ID // TODO: Change to your package
-class ParentActivity: {
+class ParentActivity: IntentService("ChildService") {
     private val TAG = "ParentActivity"
     private val REQUEST_PERMISSIONS_REQUEST_CODE = 34
     private lateinit var fusedLocationClient: FusedLocationProviderClient
@@ -37,7 +37,7 @@ class ParentActivity: {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         cargo = DogOrChild()
         onStart()
-        while(true)
+        /* while(true)
         {
             getLastLocation()
             performCheckIn()
@@ -45,12 +45,12 @@ class ParentActivity: {
                 // TODO: Send Notification to phone
 
             }
-//            if(checkIn)
-//            {
-//                // Takes previous location once checking in to app.
-//                staticXPos = prevXPos
-//                staticYPos = prevYPos
-//            }
+        } */
+    }
+    override fun onHandldIntent(intent: Intent?) {
+        getLastlocation()
+        performCheckIn()
+        if(cargo.angry) {
 
         }
     }
