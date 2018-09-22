@@ -21,6 +21,7 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
     private var prevYPos: Double = 0.0
     private var myActivityRef = MyActivity
     private val TAG = "IntentService"
+    private var notificationalert: NoticationAlert
 
     override fun onHandleIntent(intent: Intent?) {
         cargo = DogOrChild()
@@ -28,6 +29,9 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
         performCheckIn()
         if(cargo.angry) {
             // TODO: Send notification to phone
+            notificationalert = NoticationAlert()
+            notificationalert.createNotificationStuff()
+            notificationalert.alert()
         }
         Thread.sleep(400)
     }
