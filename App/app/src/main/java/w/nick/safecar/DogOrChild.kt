@@ -20,7 +20,7 @@ object DogOrChild{
 
     //Checks a variety of bad conditions for DogOrChild
     fun badness(momXGeoPos: Double, momYGeoPos: Double){
-        if(eDist(momXGeoPos, momYGeoPos, geoXPos, geoYPos) > threshold || hotness(NetClientGet.getTemp(momXGeoPos,momYGeoPos)))
+        if(eDist(momXGeoPos, momYGeoPos, geoXPos, geoYPos) > threshold || hotness(APICall.getTemp(geoXPos,geoYPos)))
             angry = true
     }
 
