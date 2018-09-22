@@ -22,15 +22,15 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
     private var prevYPos: Double = 0.0
     private var myActivityRef = MyActivity
     private val TAG = "IntentService"
-    private lateinit var notificationalert: NoticationAlert
+    private lateinit var notificationalert: NotificationAlert
 
     override fun onHandleIntent(intent: Intent?) {
         getLastLocation()
         performCheckIn()
         if(cargo.angry) {
             // TODO: Send notification to phone
-            notificationalert = NoticationAlert()
-            notificationalert.createNotificationStuff()
+            notificationalert = NotificationAlert()
+            notificationalert.createNotificationStuff(myActivityRef.applicationContext)
             notificationalert.alert()
         }
         Thread.sleep(400)

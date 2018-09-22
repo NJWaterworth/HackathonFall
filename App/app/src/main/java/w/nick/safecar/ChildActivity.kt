@@ -9,7 +9,7 @@ class ChildActivity: AppCompatActivity(){
         super.onCreate(savedInstanceState)
         val id = intent.getStringExtra("ID")
         setContentView(R.layout.object_layout)
-        //makeHeader()
+        makeHeader()
     }
 
     fun makeHeader(){

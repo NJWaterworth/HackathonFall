@@ -26,7 +26,7 @@
         android:textSize="24sp"
         android:layout_toRightOf="@id/action_add"
         android:layout_toEndOf="@id/action_add"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"/>
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
 
 </RelativeLayout>
