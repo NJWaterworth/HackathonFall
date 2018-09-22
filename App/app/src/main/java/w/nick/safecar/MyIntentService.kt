@@ -9,20 +9,6 @@ import android.content.Context
 import android.util.Log
 import java.lang.ref.WeakReference
 
-<<<<<<< HEAD
-/*class MyIntentService: IntentService("MyIntentService") {
-    var Lat = 0.0
-    var Lon = 0.0
-
-    constructor(): super(null) {
-        super.onCreate()
-    }
-    constructor(lat : Double, lon : Double) : super("MyIntentService") {
-        this.Lat = lat
-        this.Lon = lon
-        super.onCreate()
-    }
-=======
 class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: MainActivity): IntentService("MyIntentService") {
     var Lat = lat
     var Lon = lon
@@ -36,7 +22,6 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
     private var myActivityRef = MyActivity
     private val TAG = "IntentService"
     private var notificationalert: NoticationAlert
->>>>>>> e1fa1de75120c0e264a701d1c7527e1596a0e713
 
     override fun onHandleIntent(intent: Intent?) {
         getLastLocation()
@@ -78,4 +63,4 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
         }
     }
 
-}*/
+}
