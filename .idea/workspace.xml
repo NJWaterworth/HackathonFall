@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dcd9602-5664-4a8c-b5d0-ac91b6ef736a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/App/app/src/androidTest/java/w/nick/safecar/DogOrChild" />
+      <change beforePath="$PROJECT_DIR$/app/app/src/androidTest/java/w/nick/safecar/DogOrChild" afterPath="$PROJECT_DIR$/app/app/src/androidTest/java/w/nick/safecar/DogOrChild" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/out/production/classes/" />
@@ -26,8 +26,8 @@
       <file leaf-file-name="DogOrChild" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/app/src/androidTest/java/w/nick/safecar/DogOrChild">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -52,7 +52,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
@@ -393,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app/src/androidTest/java/w/nick/safecar/DogOrChild">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding />
         </state>
       </provider>

@@ -3,11 +3,12 @@
 object DogOrChild(){
     val geoXPos: Double
     val geoYPos: Double
-    val timer: Int
+    val timeStart: Double
+    val timeElapsed: Double
     val name: String
     val age: Double
     val mobility: Double
-    val threshold: Double
+    val threshold: Double = 150 //150 ft away
     val angry: Boolean
 
     fun calcMobility(){
@@ -18,23 +19,36 @@ object DogOrChild(){
     }
 
     //Checks a variety of bad conditions for DogOrChild
-    fun badness(momXGeoPos: Double, momYGeoPos: Double, temp: Double){
+    fun badness(momXGeoPos: Double, momYGeoPos: Double){
         if(eDist(momXGeoPos, momYGeoPos, geoXPos, geoYPos) > threshold || hotness(NetClientGet.getTemp(momXGeoPos,momYGeoPos)))
             angry = true
     }
 
     //Euclidean distance
     fun eDist(x1: Double, y1: Double, x2: Double, y2: Double){
-        return sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2))
+        return degToFeet(sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2)))
+    }
+
+    //Converts degree to feet
+    fun degToFeet(x: Double){
+        ft: Double = 0
+        ft = x * 365214.6
+        return ft
+    }
+
+    //Updates entity
+    fun update(time: Double, XGeoPos: Double,YGeoPos: Double){
+        timeElapsed = time - timeStart;
+        badness(XGeoPos,YGeoPos)
     }
 
     //Checks if too hot
     fun hotness(temp: Double){
         if(temp > 100)
             return true
-        else if(temp >=93 && timer > 5)
+        else if(temp >=93 && timeElapsed > 5)
             return true
-        else if(temp >= 85 && timer > 10)
+        else if(temp >= 85 && timeElapsed > 10)
             return true
         else if(timer > 20)
             return true
