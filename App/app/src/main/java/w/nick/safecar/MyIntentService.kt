@@ -5,7 +5,7 @@ import android.content.Intent
 import android.content.Context
 import android.util.Log
 
-class MyIntentService: IntentService("MyIntentService") {
+class MyIntentService(lat: Double, lon: Double){
     var Lat = 0.0
     var Lon = 0.0
 
