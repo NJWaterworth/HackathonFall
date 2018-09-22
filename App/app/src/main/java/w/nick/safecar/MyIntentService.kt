@@ -1,4 +1,4 @@
-package com.example.jasperharrison.locationtest
+package w.nick.safecar
 
 import android.app.IntentService
 import android.content.Intent

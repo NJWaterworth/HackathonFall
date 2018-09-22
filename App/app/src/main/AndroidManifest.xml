@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChildActivity" />
+        <service android:name=".MyIntentService" />
     </application>
 
 </manifest>

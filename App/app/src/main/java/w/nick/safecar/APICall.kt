@@ -1,3 +1,5 @@
+import java.net.URL
+
 object APICall{
     fun getTemp(lat: Double, lng:Double):Double {
         var ural = "http://api.openweathermap.org/data/2.5/weather?lat="

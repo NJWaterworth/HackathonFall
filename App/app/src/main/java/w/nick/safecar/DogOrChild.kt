@@ -2,7 +2,7 @@ package w.nick.safecar
 
 import w.nick.safecar.NetClientGetOldBoy
 import java.lang.Math
-object DogOrChild{
+class DogOrChild{
     private var geoXPos: Double = 0.0
     private var geoYPos: Double = 0.0
     private var timeStart: Double = 0.0
@@ -11,7 +11,7 @@ object DogOrChild{
     private var age: Double = 0.0
     private var mobility: Double = 0.0
     private var threshold: Double = 150.0 //150 ft away
-    private var angry: Boolean = false
+    var angry: Boolean = false
     private var temp: Double = 0.0
 
     fun calcMobility(){
@@ -36,6 +36,11 @@ object DogOrChild{
         geoXPos = xPos
         geoYPos = yPos
         temp = APICall.getTemp(geoXPos,geoYPos)
+    }
+
+    fun updateCords(xPos: Double, yPos: Double) {
+        geoXPos = xPos
+        geoYPos = yPos
     }
 
     //Converts degree to feet
