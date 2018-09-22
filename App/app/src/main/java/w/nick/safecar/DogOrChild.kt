@@ -1,20 +1,20 @@
+package w.nick.safecar
 
-
-object DogOrChild(){
-    val geoXPos: Double
-    val geoYPos: Double
-    val timeStart: Double
-    val timeElapsed: Double
-    val name: String
-    val age: Double
-    val mobility: Double
-    val threshold: Double = 150 //150 ft away
-    val angry: Boolean
+/*object DogOrChild(){
+    private var geoXPos: Double = 0.0
+    private var geoYPos: Double = 0.0
+    private var timeStart: Double = 0.0
+    private var timeElapsed: Double = 0.0
+    private lateinit var name: String
+    private var age: Double = 0.0
+    private var mobility: Double = 0.0
+    private var threshold: Double = 150.0 //150 ft away
+    private var angry: Boolean = false
 
     fun calcMobility(){
         val effectiveAge: Double
         if(age > 6)
-            effectiveAge = 6
+            effectiveAge = 6.0
         mobility = effectiveAge/6
     }
 
@@ -26,7 +26,7 @@ object DogOrChild(){
 
     //Euclidean distance
     fun eDist(x1: Double, y1: Double, x2: Double, y2: Double){
-        return degToFeet(sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2)))
+        return degToFeet(Math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2)))
     }
 
     //Converts degree to feet
@@ -55,4 +55,4 @@ object DogOrChild(){
         else
             return false
     }
-}
+}*/

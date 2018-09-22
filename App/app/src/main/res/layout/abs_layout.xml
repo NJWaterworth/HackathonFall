@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:ignore="ExtraText"
+    android:divider="@android:color/transparent">
+
+    <ImageButton
+        android:id="@+id/action_add"
+        android:src="@drawable/ic_plus"
+        android:showAsAction="ifRoom"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_bar_title"
+        android:text="APPNAME"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:layout_toRightOf="@id/action_add"
+        android:layout_toEndOf="@id/action_add"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <ImageButton
+        android:id="@+id/action_settings"
+        android:src="@drawable/ic_settings"
+        android:showAsAction="ifRoom"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:layout_toRightOf="@id/action_bar_title"
+        android:layout_toEndOf="@id/action_bar_title"
+        android:layout_marginLeft="20dp" />
+</RelativeLayout>
