@@ -59,7 +59,7 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
         }
     }
     @SuppressLint("MissingPermission")
-    private fun getLastLocation() {
+    fun getLastLocation() {
         var xPos: String
         var yPos: String
         fusedLocationClient.lastLocation.addOnCompleteListener(myActivityRef) { task ->
