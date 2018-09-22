@@ -10,10 +10,18 @@ class ChildActivity: AppCompatActivity(){
         val id = intent.getStringExtra("ID")
         setContentView(R.layout.object_layout)
         makeHeader()
+        var Thing: DogOrChild = DogOrChild()
+
+        SetUpAnimal(Thing)
     }
 
     fun makeHeader(){
         getSupportActionBar()!!.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM)
         getSupportActionBar()!!.setCustomView(R.layout.cbs_layout)
+    }
+
+    fun SetUpAnimal(t:DogOrChild ){
+
+        t.update()
     }
 }
