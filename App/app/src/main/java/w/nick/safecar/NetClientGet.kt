@@ -18,7 +18,7 @@ object NetClientGet {
         var ural = "http://api.openweathermap.org/data/2.5/weather?lat="
         val ural2 = "&lon="
         val ural3 = "&units=imperial&type=accurate&mode=xml&APPID=66bf8bca4952f3cb9d0b08273919dc35"
-        ural = ural.toDouble() + lat + ural2.toDouble() + lng + ural3.toDouble()
+        ural = ural + lat.toString() + ural2 + lng.toString() + ural3
 
         var temp = "70.0"
         try {
@@ -35,15 +35,16 @@ object NetClientGet {
             val br = BufferedReader(InputStreamReader(
                     conn.getInputStream()))
 
-            var outline: String
+            var outline: String = ""
             var output = ""
-            while ((outline = br.readLine()) != null) {
+            while (outline != null) {
+                outline = br.readLine()
                 output += outline
             }
             output = output.substring(output.indexOf("temperature value"), output.indexOf("temperature value") + 24)
             output = output.substring(output.indexOf("\""), output.indexOf("\"", output.indexOf("\"") + 1) + 1)
 
-            temp = output.substring(1, output.length() - 1)
+            temp = output.substring(1, output.length - 1)
 
             conn.disconnect()
 
@@ -57,7 +58,7 @@ object NetClientGet {
 
         }
 
-        return Double.parseDouble(temp)
+        return temp.toDouble()
     }
 
 }

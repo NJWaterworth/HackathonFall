@@ -1,6 +1,6 @@
 package w.nick.safecar
 
-object DogOrChild(){
+object DogOrChild{
     private var geoXPos: Double = 0.0
     private var geoYPos: Double = 0.0
     private var timeStart: Double = 0.0
@@ -12,7 +12,7 @@ object DogOrChild(){
     private var angry: Boolean = false
 
     fun calcMobility(){
-        val effectiveAge: Double
+        var effectiveAge: Double = age
         if(age > 6)
             effectiveAge = 6.0
         mobility = effectiveAge/6
@@ -31,7 +31,7 @@ object DogOrChild(){
 
     //Converts degree to feet
     fun degToFeet(x: Double): Double{
-        ft: Double = 0
+        var ft: Double = 0.0
         ft = x * 365214.6
         return ft
     }
@@ -50,7 +50,7 @@ object DogOrChild(){
             return true
         else if(temp >= 85 && timeElapsed > 10)
             return true
-        else if(timer > 20)
+        else if(timeElapsed > 20)
             return true
         else
             return false
