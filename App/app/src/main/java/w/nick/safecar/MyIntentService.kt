@@ -26,6 +26,9 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
         cargo = DogOrChild()
         getLastLocation()
         performCheckIn()
+        if(cargo.angry) {
+            // TODO: Send notification to phone
+        }
         Thread.sleep(400)
     }
 
