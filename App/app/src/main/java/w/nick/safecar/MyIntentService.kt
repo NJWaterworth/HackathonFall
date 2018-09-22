@@ -35,7 +35,18 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
         }
         Thread.sleep(400)
     }
-
+    fun getX(): Double {
+        return prevXPos
+    }
+    fun getY(): Double {
+        return prevYPos
+    }
+    fun getCarX(): Double {
+        return staticXPos
+    }
+    fun getCarY(): Double {
+        return staticYPos
+    }
 
     private fun performCheckIn() {
         if(checkIn) {
@@ -48,7 +59,7 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
         }
     }
     @SuppressLint("MissingPermission")
-    private fun getLastLocation() {
+    fun getLastLocation() {
         var xPos: String
         var yPos: String
         fusedLocationClient.lastLocation.addOnCompleteListener(myActivityRef) { task ->
