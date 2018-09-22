@@ -1,4 +1,4 @@
-package comnjwaterworth.httpsgithub.safecar
+package w.nick.safecar
 
 import org.junit.Test
 
