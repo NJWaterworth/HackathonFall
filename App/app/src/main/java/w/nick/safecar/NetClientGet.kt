@@ -8,11 +8,6 @@ import java.net.MalformedURLException
 import java.net.URL
 
 object NetClientGet {
-
-    fun main(args: Array<String>) {
-        System.out.println("Temperature: " + getTemp(36.08, -94.17))
-    }
-
     // http://localhost:8080/RESTfulExample/json/product/get
     fun getTemp(lat: Double, lng: Double): Double {
         var ural = "http://api.openweathermap.org/data/2.5/weather?lat="
