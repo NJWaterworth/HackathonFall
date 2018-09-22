@@ -13,7 +13,7 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
     var Lat = lat
     var Lon = lon
     var checkIn = false
-    private lateinit var cargo: DogOrChild
+    private var cargo: DogOrChild = DogOrChild()
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private var staticXPos: Double = 0.0
     private var staticYPos: Double = 0.0
@@ -24,7 +24,6 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
     private var notificationalert: NoticationAlert
 
     override fun onHandleIntent(intent: Intent?) {
-        cargo = DogOrChild()
         getLastLocation()
         performCheckIn()
         if(cargo.angry) {
