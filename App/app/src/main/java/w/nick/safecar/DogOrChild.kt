@@ -1,9 +1,7 @@
 package w.nick.safecar
 
-<<<<<<< HEAD
 import w.nick.safecar.NetClientGetOldBoy
 import java.lang.Math
-=======
 object DogOrChild{
     private var geoXPos: Double = 0.0
     private var geoYPos: Double = 0.0
@@ -14,8 +12,7 @@ object DogOrChild{
     private var mobility: Double = 0.0
     private var threshold: Double = 150.0 //150 ft away
     private var angry: Boolean = false
-    private val temp: Double = 0.0
->>>>>>> 12cc177eb9f4ef01a6a207a5169ddc666c9bea5d
+    private var temp: Double = 0.0
 
     fun calcMobility(){
         var effectiveAge: Double = age
@@ -25,13 +22,8 @@ object DogOrChild{
     }
 
     //Checks a variety of bad conditions for DogOrChild
-<<<<<<< HEAD
-    fun badness(momXGeoPos: Double, momYGeoPos: Double) {
-        if (eDist(momXGeoPos, momYGeoPos, geoXPos, geoYPos) > threshold || hotness(NetClientGetOldBoy.getTemp(momXGeoPos, momYGeoPos)))//NetClientGet is Separate Code
-=======
     fun badness(momXGeoPos: Double, momYGeoPos: Double){
         if(eDist(momXGeoPos, momYGeoPos, geoXPos, geoYPos) > threshold || hotness(temp))
->>>>>>> 12cc177eb9f4ef01a6a207a5169ddc666c9bea5d
             angry = true
     }
 

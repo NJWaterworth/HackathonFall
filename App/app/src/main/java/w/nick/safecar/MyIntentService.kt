@@ -7,23 +7,9 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import android.content.Context
 import android.util.Log
+import w.nick.safecar.DogOrChild
 import java.lang.ref.WeakReference
 
-<<<<<<< HEAD
-/*class MyIntentService: IntentService("MyIntentService") {
-    var Lat = 0.0
-    var Lon = 0.0
-
-    constructor(): super(null) {
-        super.onCreate()
-    }
-    constructor(lat : Double, lon : Double) : super("MyIntentService") {
-        this.Lat = lat
-        this.Lon = lon
-        super.onCreate()
-    }
-=======
->>>>>>> 12cc177eb9f4ef01a6a207a5169ddc666c9bea5d
 class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: MainActivity): IntentService("MyIntentService") {
     var Lat = lat
     var Lon = lon
@@ -36,7 +22,7 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
     private var prevYPos: Double = 0.0
     private var myActivityRef = MyActivity
     private val TAG = "IntentService"
-    private var notificationalert: NoticationAlert
+    private lateinit var notificationalert: NoticationAlert
 
     override fun onHandleIntent(intent: Intent?) {
         getLastLocation()
@@ -77,5 +63,4 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
             }
         }
     }
-
 }
