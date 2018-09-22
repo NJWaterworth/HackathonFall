@@ -1,5 +1,5 @@
 object APICall{
-    fun getTemp(lat: Double, long:Double):Double {
+    fun getTemp(lat: Double, lng:Double):Double {
         var ural = "http://api.openweathermap.org/data/2.5/weather?lat="
         val ural2 = "&lon="
         val ural3 = "&units=imperial&type=accurate&mode=xml&APPID=66bf8bca4952f3cb9d0b08273919dc35"

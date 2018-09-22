@@ -1,5 +1,6 @@
 package com.example.jasperharrison.locationtest
 
+import w.nick.safecar.NetClientGetOldBoy
 import java.lang.Math
 
 class DogOrChild {
@@ -22,7 +23,7 @@ class DogOrChild {
 
     //Checks a variety of bad conditions for DogOrChild
     fun badness(momXGeoPos: Double, momYGeoPos: Double) {
-        if (eDist(momXGeoPos, momYGeoPos, geoXPos, geoYPos) > threshold || hotness(NetClientGet.getTemp(momXGeoPos, momYGeoPos)))//NetClientGet is Separate Code
+        if (eDist(momXGeoPos, momYGeoPos, geoXPos, geoYPos) > threshold || hotness(NetClientGetOldBoy.getTemp(momXGeoPos, momYGeoPos)))//NetClientGet is Separate Code
             angry = true
     }
 
