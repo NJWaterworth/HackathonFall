@@ -1,0 +1,44 @@
+
+
+object DogOrChild(){
+    val geoXPos: Double
+    val geoYPos: Double
+    val timer: Int
+    val name: String
+    val age: Double
+    val mobility: Double
+    val threshold: Double
+    val angry: Boolean
+
+    fun calcMobility(){
+        val effectiveAge: Double
+        if(age > 6)
+            effectiveAge = 6
+        mobility = effectiveAge/6
+    }
+
+    //Checks a variety of bad conditions for DogOrChild
+    fun badness(momXGeoPos: Double, momYGeoPos: Double, temp: Double){
+        if(eDist(momXGeoPos, momYGeoPos, geoXPos, geoYPos) > threshold || hotness(NetClientGet.getTemp(momXGeoPos,momYGeoPos)))
+            angry = true
+    }
+
+    //Euclidean distance
+    fun eDist(x1: Double, y1: Double, x2: Double, y2: Double){
+        return sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2))
+    }
+
+    //Checks if too hot
+    fun hotness(temp: Double){
+        if(temp > 100)
+            return true
+        else if(temp >=93 && timer > 5)
+            return true
+        else if(temp >= 85 && timer > 10)
+            return true
+        else if(timer > 20)
+            return true
+        else
+            return false
+    }
+}
