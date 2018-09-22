@@ -1,17 +1,27 @@
 package w.nick.safecar
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.ActionBar
+import android.support.v7.app.AlertDialog
+import android.util.AndroidException
 import android.view.MenuItem
 import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.Toast
+import android.widget.TextView
+import android.widget.AdapterView.OnItemClickListener
+
+
 
 class MainActivity : AppCompatActivity() {
     var list: ListView? = null
 
     var itemname = arrayOf("Baby Boy", "DoggyDog")
+    var id = arrayOf<Int>(0, 1)
     var imgid = arrayOf<Int>(R.drawable.ic_back, R.drawable.ic_plus)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         makeHeader()
         popData()
+
     }
 
     fun makeHeader() {
@@ -26,30 +37,26 @@ class MainActivity : AppCompatActivity() {
         getSupportActionBar()!!.setCustomView(R.layout.abs_layout)
     }
 
-    fun popData(){
+    private fun popData() {
         val adapter = CustomListAdapter(this, itemname, imgid)
         list = findViewById<View>(R.id.list) as ListView
         list!!.setAdapter(adapter)
 
-
-    }
-
-   override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        R.id.action_add -> {
-            // User chose the "Settings" item, show the app settings UI...
-            true
-        }
-
-        R.id.action_settings -> {
-            // User chose the "Favorite" action, mark the current item
-            // as a favorite...
-            true
-        }
-
-        else -> {
-            // If we got here, the user's action was not recognized.
-            // Invoke the superclass to handle it.
-            super.onOptionsItemSelected(item)
+        //Item Clicker
+        list!!.onItemClickListener = OnItemClickListener { parent, view, position, id ->
+            Toast.makeText(baseContext,id.toString(), Toast.LENGTH_LONG).show()
+            if(id == 0.toLong()) {
+                val intent = Intent(this, w.nick.safecar.ChildActivity::class.java).apply {
+                    putExtra("ID", 0) }
+                startActivity(intent)
+            }
+            else if(id == 1.toLong())
+            {
+                val intent = Intent(this, ChildActivity::class.java).apply {
+                    putExtra("ID", 1)}
+                startActivity(intent)
+            }
         }
     }
+
 }
