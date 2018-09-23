@@ -16,13 +16,28 @@
                             <entry key="launcherLegacy">
                               <value>
                                 <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="paddingPercent" value="25" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="cropped" value="true" />
-                                      <entry key="iconShape" value="HRECT" />
-                                      <entry key="imageAsset" value="C:\Users\Nick\Documents\HackathonFall\App\Images\download.jpg" />
-                                      <entry key="outputName" value="ic_doggo" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="C:\Users\Nick\Documents\HackathonFall\App\Images\baby.png" />
+                                      <entry key="outputName" value="ic_baby" />
                                     </map>
                                   </option>
                                 </PersistentState>

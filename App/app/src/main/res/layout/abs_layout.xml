@@ -21,13 +21,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/action_bar_title"
-        android:text="APPNAME"
+        android:text="SafeCar"
         android:textColor="#ffffff"
         android:textSize="24sp"
         android:layout_toRightOf="@id/action_add"
         android:layout_toEndOf="@id/action_add"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"/>
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"/>
 
     <ImageButton
         android:id="@+id/action_settings"

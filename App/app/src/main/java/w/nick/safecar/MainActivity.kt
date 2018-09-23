@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     var TAG = "MainActivity"
     var itemname = arrayOf("Baby Boy", "DoggyDog")
     var id = arrayOf<Int>(0, 1)
-    var imgid = arrayOf<Int>(R.drawable.ic_back, R.drawable.ic_plus)
+    var imgid = arrayOf<Int>(R.mipmap.ic_baby, R.mipmap.ic_doggo)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

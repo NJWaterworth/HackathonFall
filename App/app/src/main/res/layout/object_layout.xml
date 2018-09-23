@@ -6,57 +6,102 @@
     android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="168dp" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="530dp"
+        android:layout_height="402dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintVertical_bias="0.664"
+        app:srcCompat="@mipmap/doggo" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="176dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/Temp"
+        android:layout_width="169dp"
+        android:layout_height="58dp"
+        android:background="@null"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="126dp"
         android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="271dp" />
+        android:fontFamily="sans-serif"
+        android:inputType="text|number"
+        android:text="93 degrees"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="177dp"
+        android:id="@+id/Lat"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="9dp"
+        android:background="@null"
         android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="271dp" />
+        android:inputType="text"
+        android:text="3 Feet Away"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Check"
+        app:layout_constraintVertical_bias="0.346" />
 
-    <Button
-        android:id="@+id/button"
+    <ToggleButton
+        android:id="@+id/Check"
         android:layout_width="295dp"
         android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="33dp"
+        android:checked="true"
         android:text="Button"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="214dp" />
+        android:textOff="Check In"
+        android:textOn="Check Out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Temp" />
 
     <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
+        android:id="@+id/Name"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="139dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="5dp" />
+        android:text="Lil Boy"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="344dp"
-        android:layout_height="187dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="320dp" />
+        android:id="@+id/Description"
+        android:layout_width="348dp"
+        android:layout_height="189dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Luke the Golden Retriever"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lat" />
 
 </android.support.constraint.ConstraintLayout>

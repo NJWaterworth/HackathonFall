@@ -5,8 +5,8 @@ import java.lang.Math
 class DogOrChild{
     private var geoXPos: Double = 0.0
     private var geoYPos: Double = 0.0
-    private var timeStart: Double = 0.0
-    private var timeElapsed: Double = 0.0
+    private var timeStart: Long = 0
+    private var timeElapsed: Long = 0
     private lateinit var name: String
     private var age: Double = 0.0
     private var mobility: Double = 0.0
@@ -51,7 +51,7 @@ class DogOrChild{
     }
 
     //Updates entity
-    fun update(time: Double, XGeoPos: Double,YGeoPos: Double){
+    fun update(time: Long, XGeoPos: Double,YGeoPos: Double){
         timeElapsed = time - timeStart;
         badness(XGeoPos,YGeoPos)
     }
