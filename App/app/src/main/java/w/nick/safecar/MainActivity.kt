@@ -12,11 +12,6 @@ import android.util.AndroidException
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.ListView
-import android.widget.Toast
-import android.widget.TextView
 import android.widget.AdapterView.OnItemClickListener
 import com.google.android.gms.location.LocationServices
 import android.support.v4.app.ActivityCompat
@@ -24,6 +19,8 @@ import android.content.pm.PackageManager
 import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.net.Uri
 import android.provider.Settings
+import android.widget.*
+import kotlinx.android.synthetic.main.activity_main.*
 import w.nick.safecar.BuildConfig.APPLICATION_ID
 
 
@@ -40,6 +37,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         makeHeader()
         popData()
+        // checkPermissions()
+//        var result: Double = APICall.getTemp(36.0, -94.0)
+//        var something: EditText = findViewById<EditText>(R.id.editText2) as EditText
+//        something.setText(result.toString())
 
     }
 
@@ -48,8 +49,9 @@ class MainActivity : AppCompatActivity() {
         if(!checkPermissions()) {
             Log.e(TAG, "Checking Permissions")
         }
-        val intent = Intent(this, MyIntentService::class.java)
-        startService(intent)
+//        val intent = Intent(this, MyIntentService::class.java)
+//        val intentZService = IntentService(0.0, 0.0, this)
+//        startService(intent)
 
     }
 

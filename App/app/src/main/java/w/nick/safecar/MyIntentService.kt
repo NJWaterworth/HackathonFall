@@ -29,8 +29,10 @@ class MyIntentService(lat: Double = 0.0, lon: Double = 0.0, var MyActivity: Main
         getLastLocation()
         performCheckIn()
         if(cargo.angry) {
-            notificationalert = NotificationAlert()
-            notificationalert.createNotificationStuff(myActivityRef.applicationContext)
+            if(notificationalert == null) {
+                notificationalert = NotificationAlert()
+                notificationalert.createNotificationStuff(myActivityRef.applicationContext)
+            }
             notificationalert.alert()
         }
         Thread.sleep(400) // Sleeps for .4 seconds.
